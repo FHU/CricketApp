@@ -1,12 +1,8 @@
 ﻿<Properties StartupConfiguration="{46192AA6-0F41-4D12-9CFB-B352E928BF0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CricketApp/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CricketApp/Pages/Index.cshtml.cs">
     <Files>
-      <File FileName="CricketApp/Pages/Index.cshtml" Line="81" Column="27" />
-      <File FileName="CricketApp/Pages/Index.cshtml.cs" Line="34" Column="17" />
-      <File FileName="CricketApp/Data/CricketDBContext.cs" Line="15" Column="39" />
-      <File FileName="CricketApp/Data/Player.cs" Line="1" Column="1" />
-      <File FileName="CricketApp/appsettings.json" Line="10" Column="6" />
-      <File FileName="CricketApp/Startup.cs" Line="1" Column="1" />
+      <File FileName="CricketApp/Pages/Index.cshtml" Line="107" Column="33" />
+      <File FileName="CricketApp/Pages/Index.cshtml.cs" Line="45" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

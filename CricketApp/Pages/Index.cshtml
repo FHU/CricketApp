@@ -68,18 +68,45 @@
 </div> -->
 
 <div class="row" >
-
+<div class="col-md-12" > <h2> Captain </h2></div>
     <div class="col-md-12" >
         <h2> @Model.Captain </h2>
     </div>
+     
 </div>
 
-<div class="row" >
+<hr>
 
+<div class="row" >
+<div class="col-md-12" > <h2> Players </h2> </div>
     @foreach( var p in @Model.Players ) {
     <div class="col-md-4" >
         <h3> @p.FirstName @p.LastName </h3>
     </div>
     }
-    
+
+</div>
+
+<hr>
+
+<div class="row" >
+    <div class="col-md-6 col-md-offset-3" >
+        <h2> Add New Player </h2>
+        <form method="post">
+            
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input asp-for="Player.FirstName" type="text" class="form-control" id="firstname" placeholder="John">
+            </div>
+                
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input asp-for="Player.LastName" type="text" class="form-control" id="lastname" placeholder="Smith">
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+            
+        </form>
+    </div>
+     <hr>
 </div>
