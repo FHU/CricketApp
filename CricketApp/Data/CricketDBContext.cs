@@ -5,13 +5,9 @@ namespace CricketApp.Data
 {
     public class CricketDBContext: DbContext 
     {
-        public CricketDBContext()
+        public CricketDBContext( DbContextOptions<CricketDBContext> options )
+            :base(options)
         {
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Data Source=cricket.db");
         }
 
         public DbSet<Player> Players { get; set; }

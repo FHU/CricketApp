@@ -11,31 +11,29 @@ namespace CricketApp.Pages
     public class IndexModel : PageModel
     {
 
-        public string Referee
-        {
-            get;
-            set;
+        private readonly CricketDBContext context;
+
+        public IndexModel(CricketDBContext context) {
+            this.context = context;
         }
 
+        public string Captain { get; set; }
             
-        public List<Player> Players
-        {
-            get;
-            set;
-        }
-
+        public List<Player> Players { get; set; }
 
         public void OnGet()
         {
-            Referee = "Asher" + ", the SMASHER, Lloyd";
+            Captain = "Asher" + ", the SMASHER, Lloyd";
 
             /*Players = new List<string>() { 
                 "Joshua Steward", "Sidney Harmon", "Cam Maguf", "Jerome Beard" 
             };*/
 
-            using (var db = new CricketDBContext() ) {
+            Players = context.Players.ToList();
+
+            /*using (var db = new CricketDBContext( ) ) {
                 Players = db.Players.OrderBy(p=>p.LastName).ToList();
-            }
+            }*/
 
 
         }
